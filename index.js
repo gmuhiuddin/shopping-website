@@ -214,11 +214,66 @@ let container = document.getElementsByClassName('container');
   })
 
   function showCarts (product){
-    let cartsHtml = `<div class="cart">
+    let cartsHtml = `<div class="cart" id='${product.id}'>
 <img class="product-img" src="${product.image}" />
 <h3 class="product-title">${product.title}</h3>
 <b class="product-price">${product.price} $</b>
-<h5 class="product-rating">${product.rating.rate} (${product.rating.count})</h5>
+<h5 class="product-rating"><i class="fas fa-star" style="color: #fbff05;"></i> ${product.rating.rate} (${product.rating.count})</h5>
     </div>`
     container[0].innerHTML += cartsHtml
+  }
+
+  let navbarIcon = document.getElementById('navbar-icon');
+  let sideBar = document.getElementsByClassName('side-bar');
+
+  
+  sideBar[0].style.width = '241px'
+  container[0].style.marginLeft = '241px'
+
+  navbarIcon.addEventListener('click',hideShowsideBar)
+  
+  function hideShowsideBar () {
+
+    if(sideBar[0].style.width === '241px' && container[0].style.marginLeft === '241px'){
+      sideBar[0].style.width = '45px' 
+    container[0].style.marginLeft = '45px';
+    }else{
+      sideBar[0].style.width = '241px' 
+      container[0].style.marginLeft = '241px';
+    }
+    
+  }
+  hideShowsideBar()
+
+  let poppup = document.getElementsByClassName('poppup');
+
+  let carts = document.getElementsByClassName('cart');
+  
+for(let i = 0 ;i < carts.length ; i++){
+  carts[i].addEventListener('click' , cartInPoppup)
+}
+
+  function cartInPoppup (){
+    poppup[0].innerHTML = null
+    poppup[0].style.display = 'block'
+
+    let showPoppupNo = this.id
+
+    let poppupCart = `
+    <h1 id='close-cart-btn'>×</h1>
+    <div class='poppup-cart'>
+    <img class='poppup-image' src='${products[showPoppupNo-1].image}'/>
+    <h2 class="product-title">${products[showPoppupNo-1].title}</h2>
+    <h5><b>Description: </b>${products[showPoppupNo-1].description}</h5>
+<b class="product-price">${products[showPoppupNo-1].price} $</b>
+<h4 class="product-rating"><i class="fas fa-star" style="color: #fbff05;"></i> ${products[showPoppupNo-1].rating.rate} (${products[showPoppupNo-1].rating.count})</h4>
+    </div>`
+
+    poppup[0].innerHTML = poppupCart
+
+    
+  let closeCartBtn = document.getElementById('close-cart-btn');
+  closeCartBtn.addEventListener('click',function (){
+      poppup[0].style.display = 'none'
+    })
   }
