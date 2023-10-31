@@ -4,6 +4,41 @@ body{
     display: flex;
 
 }
+.navbar{
+    height: 75px;
+    width: 100%;
+    background-color: rgb(121, 240, 173);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#product-name-by-user{
+outline: none;
+border: none;
+height: 31px;
+width: 211px;
+border-radius: 15px;
+padding-left: 9px;
+font-size: 15px;
+}
+#check{
+cursor: pointer;
+border: none;
+height: 33px;
+width: 111px;
+margin: 11px;
+margin-right: 59px;
+border-radius: 12px;
+font-size: 17px;
+background-color: white;
+}
+#logo{
+    height: 59px;
+    width: 59px;
+    margin-left: 12px;
+    cursor: pointer;
+}
 .side-bar{
     background-color: rgb(238, 236, 236);
     height: 100vh;
@@ -13,16 +48,18 @@ body{
     padding: 10px 11px;
     font-size: 25px;
     cursor: pointer;
+    color: black;
 }
 .poppup{
     display: none;
     height: 619px;
     width: 599px;
-    position: fixed;
+    position:fixed;
     background-color: white;
     border-radius: 23px;
     box-shadow: 5px 5px 12px black;
-    margin-top: 39px;
+    margin: 0px auto;
+
 }
 #close-cart-btn{
     text-align: right;
@@ -44,7 +81,7 @@ body{
 }
 .poppup-image {
     height: 279px ;
-    width: 349px ;
+    width: 319px ;
 }
 .container{
     padding: 11px;
@@ -53,11 +90,25 @@ body{
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 73px;
+}
+.abc{
+    padding: 11px;
+    height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
 }
 .cart{
-    height: 459px;
-    width: 319px;
+    height: 465px;
+    width: 325px;
     margin: 15px;
     box-shadow: 3px 3px 12px black;
     background-color: rgb(255, 255, 255);
@@ -65,7 +116,7 @@ body{
     border-radius: 12px;
 }
 .product-img{
-    margin: 0 19px;
+    margin: 0 29px;
     height: 259px;
     width: 259px;
     padding-top: 12px;
