@@ -1,6 +1,6 @@
 const products = [
   {
-    id: 1,
+    id:'1',
     title: 'Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops',
     price: 109.95,
     description:
@@ -10,7 +10,7 @@ const products = [
     rating: { rate: 3.9, count: 120 }
   },
   {
-    id: 2,
+    id:'2',
     title: 'Mens Casual Premium Slim Fit T-Shirts ',
     price: 22.3,
     description:
@@ -21,7 +21,7 @@ const products = [
     rating: { rate: 4.1, count: 259 }
   },
   {
-    id: 3,
+    id:'3',
     title: 'Mens Cotton Jacket',
     price: 55.99,
     description:
@@ -31,7 +31,7 @@ const products = [
     rating: { rate: 4.7, count: 500 }
   },
   {
-    id: 4,
+    id:'4',
     title: 'Mens Casual Slim Fit',
     price: 15.99,
     description:
@@ -41,7 +41,7 @@ const products = [
     rating: { rate: 2.1, count: 430 }
   },
   {
-    id: 5,
+    id:'5',
     title:
       "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
     price: 695,
@@ -52,7 +52,7 @@ const products = [
     rating: { rate: 4.6, count: 400 }
   },
   {
-    id: 6,
+    id:'6',
     title: 'Solid Gold Petite Micropave ',
     price: 168,
     description:
@@ -62,7 +62,7 @@ const products = [
     rating: { rate: 3.9, count: 70 }
   },
   {
-    id: 7,
+    id:'7',
     title: 'White Gold Plated Princess',
     price: 9.99,
     description:
@@ -72,7 +72,7 @@ const products = [
     rating: { rate: 3, count: 400 }
   },
   {
-    id: 8,
+    id:'8',
     title: 'Pierced Owl Rose Gold Plated Stainless Steel Double',
     price: 10.99,
     description:
@@ -82,7 +82,7 @@ const products = [
     rating: { rate: 1.9, count: 100 }
   },
   {
-    id: 9,
+    id:'9',
     title: 'WD 2TB Elements Portable External Hard Drive - USB 3.0 ',
     price: 64,
     description:
@@ -92,7 +92,7 @@ const products = [
     rating: { rate: 3.3, count: 203 }
   },
   {
-    id: 10,
+    id:'10',
     title: 'SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s',
     price: 109,
     description:
@@ -102,7 +102,7 @@ const products = [
     rating: { rate: 2.9, count: 470 }
   },
   {
-    id: 11,
+    id:'11',
     title:
       'Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5',
     price: 109,
@@ -113,7 +113,7 @@ const products = [
     rating: { rate: 4.8, count: 319 }
   },
   {
-    id: 12,
+    id:'12',
     title:
       'WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive',
     price: 114,
@@ -124,7 +124,7 @@ const products = [
     rating: { rate: 4.8, count: 400 }
   },
   {
-    id: 13,
+    id:'13',
     title: 'Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin',
     price: 599,
     description:
@@ -134,7 +134,7 @@ const products = [
     rating: { rate: 2.9, count: 250 }
   },
   {
-    id: 14,
+    id:'14',
     title:
       'Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ',
     price: 999.99,
@@ -145,7 +145,7 @@ const products = [
     rating: { rate: 2.2, count: 140 }
   },
   {
-    id: 15,
+    id:'15',
     title: "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
     price: 56.99,
     description:
@@ -155,7 +155,7 @@ const products = [
     rating: { rate: 2.6, count: 235 }
   },
   {
-    id: 16,
+    id:'16',
     title:
       "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
     price: 29.95,
@@ -166,7 +166,7 @@ const products = [
     rating: { rate: 2.9, count: 340 }
   },
   {
-    id: 17,
+    id:'17',
     title: 'Rain Jacket Women Windbreaker Striped Climbing Raincoats',
     price: 39.99,
     description:
@@ -176,7 +176,7 @@ const products = [
     rating: { rate: 3.8, count: 679 }
   },
   {
-    id: 18,
+    id:'18',
     title: "MBJ Women's Solid Short Sleeve Boat Neck V ",
     price: 9.85,
     description:
@@ -186,7 +186,7 @@ const products = [
     rating: { rate: 4.7, count: 130 }
   },
   {
-    id: 19,
+    id:'19',
     title: "Opna Women's Short Sleeve Moisture",
     price: 7.95,
     description:
@@ -196,7 +196,7 @@ const products = [
     rating: { rate: 4.5, count: 146 }
   },
   {
-    id: 20,
+    id:'20',
     title: 'DANVOUY Womens T Shirt Casual Cotton Short',
     price: 12.99,
     description:
@@ -207,7 +207,7 @@ const products = [
   }
 ];
 
-let container = document.getElementsByClassName('abc');
+let container = document.getElementsByClassName('container');
 
 let productNameByUser = document.getElementById('product-name-by-user');
 let check = document.getElementById('check');
@@ -270,7 +270,6 @@ function cartsLoop (){
  cartsLoop()
 
 function cartInPoppup (){
-  poppup[0].innerHTML = null
   poppup[0].style.display = 'block'
   let showPoppupNo = this.id
 
@@ -312,7 +311,7 @@ check.addEventListener('click',function () {
 
 
 
-
+let hideBar = document.querySelector('.hide-bar');
 let navbarIcon = document.getElementById('navbar-icon');
 let sideBar = document.getElementsByClassName('side-bar');
 let navbar = document.getElementsByClassName('navbar');
@@ -320,18 +319,21 @@ let navbar = document.getElementsByClassName('navbar');
 check.style.marginRight = '259px'
 sideBar[0].style.width = '241px'
 container[0].style.marginLeft = '241px'
-navbar[0].style.marginLeft = '241px'
-
+navbar[0].style.marginLeft = '241px';
+hideBar.style.display = 'block'
 navbarIcon.addEventListener('click',hideShowsideBar)
 
 function hideShowsideBar () {
 
-  if(sideBar[0].style.width === '241px' && container[0].style.marginLeft === '241px' && navbar[0].style.marginLeft === '241px' && check.style.marginRight === '259px'){
+  if(sideBar[0].style.width === '241px' && container[0].style.marginLeft === '241px' && navbar[0].style.marginLeft === '241px' && check.style.marginRight === '259px' && hideBar.style.display === 'block'){
+    hideBar.style.display = 'none'
     check.style.marginRight = '59px'
     sideBar[0].style.width = '45px' 
   container[0].style.marginLeft = '45px';
   navbar[0].style.marginLeft = '45px'
   }else{
+    hideBar.style.display = 'block'
+
     check.style.marginRight = '259px'
     navbar[0].style.marginLeft = '241px'
     sideBar[0].style.width = '241px' 
@@ -340,3 +342,75 @@ function hideShowsideBar () {
   
 }
 hideShowsideBar()
+
+let HToL = document.getElementById('HToL');
+let LTOH = document.getElementById('LToH');
+
+HToL.addEventListener('change',function () {
+  
+container[0].innerHTML = null;
+
+  let hiToLow = products.sort((a,b) => b.price-a.price)
+
+  hiToLow.forEach((product) => {
+    showCarts(product)
+  })
+  cartsLoop()
+  poppup[0].style.display = 'none'
+})
+LTOH.addEventListener('change',function () {
+  
+container[0].innerHTML = null;
+
+  let lowTohi = products.sort((a,b) => a.price-b.price)
+
+  lowTohi.forEach((product) => {
+    showCarts(product)
+  })
+  cartsLoop()
+  poppup[0].style.display = 'none'
+})
+
+let all = document.getElementById('all');
+let above3 = document.getElementById('above3');
+let above4 = document.getElementById('above4');
+
+all.addEventListener('change',function () {
+  
+container[0].innerHTML = null;
+
+  products.forEach((product) => {
+    showCarts(product)
+  })
+  
+  cartsLoop()
+  poppup[0].style.display = 'none'
+})
+
+above3.addEventListener('change',function () {
+  
+container[0].innerHTML = null;
+
+  let aboveObj = products.filter((product) => product.rating.rate >= 3)
+  console.log(aboveObj)
+  aboveObj.forEach((product) =>   {
+    showCarts(product) 
+  } )
+
+  cartsLoop()
+  poppup[0].style.display = 'none'
+})
+
+above4.addEventListener('change',function () {
+  
+container[0].innerHTML = null;
+
+  let aboveObj = products.filter((product) => product.rating.rate >= 4)
+  
+  aboveObj.forEach((product) => {
+    showCarts(product)
+  }  )
+  
+  cartsLoop()
+  poppup[0].style.display = 'none'
+})
