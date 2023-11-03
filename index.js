@@ -472,13 +472,22 @@ function showCarts (product){
 
 let poppup = document.getElementsByClassName('poppup');
 let carts = document.getElementsByClassName('cart');
-
+check.addEventListener('click' , function( ){
+  
+HToL.checked = false;
+LTOH.checked = false;
+all.checked = true;
+above3.checked = false;
+above4.checked = false;
+})
 check.addEventListener('click',cartsLoop)
 
 function cartsLoop (){
+  
   for(let i = 0 ;i < carts.length ; i++){
     carts[i].addEventListener('click' , cartInPoppup)
   }
+  
 }
  cartsLoop()
 
