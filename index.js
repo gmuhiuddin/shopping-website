@@ -479,6 +479,7 @@ LTOH.checked = false;
 all.checked = true;
 above3.checked = false;
 above4.checked = false;
+
 })
 check.addEventListener('click',cartsLoop)
 
@@ -517,21 +518,14 @@ closeCartBtn.addEventListener('click',function (){
 
 check.addEventListener('click',function () {
   poppup[0].style.display = 'none'
+
+  HToL.checked = false;
+  LTOH.checked = false;
+  all.checked = true;
+  above3.checked = false;
+  above4.checked = false;
+  
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 let hideBar = document.querySelector('.hide-bar');
 let navbarIcon = document.getElementById('navbar-icon');
@@ -543,6 +537,7 @@ sideBar[0].style.width = '241px'
 container[0].style.marginLeft = '241px'
 navbar[0].style.marginLeft = '241px';
 hideBar.style.display = 'block'
+
 navbarIcon.addEventListener('click',hideShowsideBar)
 
 function hideShowsideBar () {
