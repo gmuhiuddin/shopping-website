@@ -430,6 +430,7 @@ LTOH.checked = false;
 all.checked = true;
 above3.checked = false;
 above4.checked = false;
+window.location.reload()
 })
 
 check.addEventListener('click', searchItemByUser)
