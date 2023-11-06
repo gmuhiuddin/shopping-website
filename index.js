@@ -1,6 +1,6 @@
 const products = [
   {
-    id:'1',
+    id: '1',
     title: 'Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops',
     price: 109.95,
     description:
@@ -10,7 +10,7 @@ const products = [
     rating: { rate: 3.9, count: 120 }
   },
   {
-    id:'2',
+    id: '2',
     title: 'Mens Casual Premium Slim Fit T-Shirts ',
     price: 22.3,
     description:
@@ -21,7 +21,7 @@ const products = [
     rating: { rate: 4.1, count: 259 }
   },
   {
-    id:'3',
+    id: '3',
     title: 'Mens Cotton Jacket',
     price: 55.99,
     description:
@@ -31,7 +31,7 @@ const products = [
     rating: { rate: 4.7, count: 500 }
   },
   {
-    id:'4',
+    id: '4',
     title: 'Mens Casual Slim Fit',
     price: 15.99,
     description:
@@ -41,7 +41,7 @@ const products = [
     rating: { rate: 2.1, count: 430 }
   },
   {
-    id:'5',
+    id: '5',
     title:
       "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
     price: 695,
@@ -52,7 +52,7 @@ const products = [
     rating: { rate: 4.6, count: 400 }
   },
   {
-    id:'6',
+    id: '6',
     title: 'Solid Gold Petite Micropave ',
     price: 168,
     description:
@@ -62,7 +62,7 @@ const products = [
     rating: { rate: 3.9, count: 70 }
   },
   {
-    id:'7',
+    id: '7',
     title: 'White Gold Plated Princess',
     price: 9.99,
     description:
@@ -72,7 +72,7 @@ const products = [
     rating: { rate: 3, count: 400 }
   },
   {
-    id:'8',
+    id: '8',
     title: 'Pierced Owl Rose Gold Plated Stainless Steel Double',
     price: 10.99,
     description:
@@ -82,7 +82,7 @@ const products = [
     rating: { rate: 1.9, count: 100 }
   },
   {
-    id:'9',
+    id: '9',
     title: 'WD 2TB Elements Portable External Hard Drive - USB 3.0 ',
     price: 64,
     description:
@@ -92,7 +92,7 @@ const products = [
     rating: { rate: 3.3, count: 203 }
   },
   {
-    id:'10',
+    id: '10',
     title: 'SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s',
     price: 109,
     description:
@@ -102,7 +102,7 @@ const products = [
     rating: { rate: 2.9, count: 470 }
   },
   {
-    id:'11',
+    id: '11',
     title:
       'Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5',
     price: 109,
@@ -113,7 +113,7 @@ const products = [
     rating: { rate: 4.8, count: 319 }
   },
   {
-    id:'12',
+    id: '12',
     title:
       'WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive',
     price: 114,
@@ -124,7 +124,7 @@ const products = [
     rating: { rate: 4.8, count: 400 }
   },
   {
-    id:'13',
+    id: '13',
     title: 'Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin',
     price: 599,
     description:
@@ -134,7 +134,7 @@ const products = [
     rating: { rate: 2.9, count: 250 }
   },
   {
-    id:'14',
+    id: '14',
     title:
       'Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ',
     price: 999.99,
@@ -145,7 +145,7 @@ const products = [
     rating: { rate: 2.2, count: 140 }
   },
   {
-    id:'15',
+    id: '15',
     title: "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
     price: 56.99,
     description:
@@ -155,7 +155,7 @@ const products = [
     rating: { rate: 2.6, count: 235 }
   },
   {
-    id:'16',
+    id: '16',
     title:
       "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
     price: 29.95,
@@ -166,7 +166,7 @@ const products = [
     rating: { rate: 2.9, count: 340 }
   },
   {
-    id:'17',
+    id: '17',
     title: 'Rain Jacket Women Windbreaker Striped Climbing Raincoats',
     price: 39.99,
     description:
@@ -176,7 +176,7 @@ const products = [
     rating: { rate: 3.8, count: 679 }
   },
   {
-    id:'18',
+    id: '18',
     title: "MBJ Women's Solid Short Sleeve Boat Neck V ",
     price: 9.85,
     description:
@@ -186,7 +186,7 @@ const products = [
     rating: { rate: 4.7, count: 130 }
   },
   {
-    id:'19',
+    id: '19',
     title: "Opna Women's Short Sleeve Moisture",
     price: 7.95,
     description:
@@ -196,7 +196,7 @@ const products = [
     rating: { rate: 4.5, count: 146 }
   },
   {
-    id:'20',
+    id: '20',
     title: 'DANVOUY Womens T Shirt Casual Cotton Short',
     price: 12.99,
     description:
@@ -208,7 +208,7 @@ const products = [
 ];
 const productss = [
   {
-    id:'1',
+    id: '1',
     title: 'Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops',
     price: 109.95,
     description:
@@ -218,7 +218,7 @@ const productss = [
     rating: { rate: 3.9, count: 120 }
   },
   {
-    id:'2',
+    id: '2',
     title: 'Mens Casual Premium Slim Fit T-Shirts ',
     price: 22.3,
     description:
@@ -229,7 +229,7 @@ const productss = [
     rating: { rate: 4.1, count: 259 }
   },
   {
-    id:'3',
+    id: '3',
     title: 'Mens Cotton Jacket',
     price: 55.99,
     description:
@@ -239,7 +239,7 @@ const productss = [
     rating: { rate: 4.7, count: 500 }
   },
   {
-    id:'4',
+    id: '4',
     title: 'Mens Casual Slim Fit',
     price: 15.99,
     description:
@@ -249,7 +249,7 @@ const productss = [
     rating: { rate: 2.1, count: 430 }
   },
   {
-    id:'5',
+    id: '5',
     title:
       "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
     price: 695,
@@ -260,7 +260,7 @@ const productss = [
     rating: { rate: 4.6, count: 400 }
   },
   {
-    id:'6',
+    id: '6',
     title: 'Solid Gold Petite Micropave ',
     price: 168,
     description:
@@ -270,7 +270,7 @@ const productss = [
     rating: { rate: 3.9, count: 70 }
   },
   {
-    id:'7',
+    id: '7',
     title: 'White Gold Plated Princess',
     price: 9.99,
     description:
@@ -280,7 +280,7 @@ const productss = [
     rating: { rate: 3, count: 400 }
   },
   {
-    id:'8',
+    id: '8',
     title: 'Pierced Owl Rose Gold Plated Stainless Steel Double',
     price: 10.99,
     description:
@@ -290,7 +290,7 @@ const productss = [
     rating: { rate: 1.9, count: 100 }
   },
   {
-    id:'9',
+    id: '9',
     title: 'WD 2TB Elements Portable External Hard Drive - USB 3.0 ',
     price: 64,
     description:
@@ -300,7 +300,7 @@ const productss = [
     rating: { rate: 3.3, count: 203 }
   },
   {
-    id:'10',
+    id: '10',
     title: 'SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s',
     price: 109,
     description:
@@ -310,7 +310,7 @@ const productss = [
     rating: { rate: 2.9, count: 470 }
   },
   {
-    id:'11',
+    id: '11',
     title:
       'Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5',
     price: 109,
@@ -321,7 +321,7 @@ const productss = [
     rating: { rate: 4.8, count: 319 }
   },
   {
-    id:'12',
+    id: '12',
     title:
       'WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive',
     price: 114,
@@ -332,7 +332,7 @@ const productss = [
     rating: { rate: 4.8, count: 400 }
   },
   {
-    id:'13',
+    id: '13',
     title: 'Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin',
     price: 599,
     description:
@@ -342,7 +342,7 @@ const productss = [
     rating: { rate: 2.9, count: 250 }
   },
   {
-    id:'14',
+    id: '14',
     title:
       'Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ',
     price: 999.99,
@@ -353,7 +353,7 @@ const productss = [
     rating: { rate: 2.2, count: 140 }
   },
   {
-    id:'15',
+    id: '15',
     title: "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
     price: 56.99,
     description:
@@ -363,7 +363,7 @@ const productss = [
     rating: { rate: 2.6, count: 235 }
   },
   {
-    id:'16',
+    id: '16',
     title:
       "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
     price: 29.95,
@@ -374,7 +374,7 @@ const productss = [
     rating: { rate: 2.9, count: 340 }
   },
   {
-    id:'17',
+    id: '17',
     title: 'Rain Jacket Women Windbreaker Striped Climbing Raincoats',
     price: 39.99,
     description:
@@ -384,7 +384,7 @@ const productss = [
     rating: { rate: 3.8, count: 679 }
   },
   {
-    id:'18',
+    id: '18',
     title: "MBJ Women's Solid Short Sleeve Boat Neck V ",
     price: 9.85,
     description:
@@ -394,7 +394,7 @@ const productss = [
     rating: { rate: 4.7, count: 130 }
   },
   {
-    id:'19',
+    id: '19',
     title: "Opna Women's Short Sleeve Moisture",
     price: 7.95,
     description:
@@ -404,7 +404,7 @@ const productss = [
     rating: { rate: 4.5, count: 146 }
   },
   {
-    id:'20',
+    id: '20',
     title: 'DANVOUY Womens T Shirt Casual Cotton Short',
     price: 12.99,
     description:
@@ -421,103 +421,109 @@ let productNameByUser = document.getElementById('product-name-by-user');
 let check = document.getElementById('check');
 let logo = document.getElementById('logo');
 
-logo.addEventListener('click',searchItemByUser)
-logo.addEventListener('click',cartsLoop)
-logo.addEventListener('click',() => {
+logo.addEventListener('click', searchItemByUser)
+logo.addEventListener('click', cartsLoop)
+logo.addEventListener('click', () => {
   poppup[0].style.display = 'none'
-HToL.checked = false;
-LTOH.checked = false;
-all.checked = true;
-above3.checked = false;
-above4.checked = false;
-window.location.reload()
+  HToL.checked = false;
+  LTOH.checked = false;
+  all.checked = true;
+  above3.checked = false;
+  above4.checked = false;
+  window.location.reload();
+
 })
 
 check.addEventListener('click', searchItemByUser)
 
-searchItemByUser()   
+searchItemByUser()
 
-function searchItemByUser(){
+function searchItemByUser() {
 
-if(productNameByUser.value.length === 0){
-  container[0].innerHTML = null
+  if (productNameByUser.value.length === 0) {
+    container[0].innerHTML = null
 
-  products.forEach((product) => {
+    products.forEach((product) => {
       showCarts(product)
     })
 
-}else{
-  
-  container[0].innerHTML = null
-  let userProduct = productNameByUser.value
-  let search = products.filter((productab) => productab.title.toLowerCase().includes(userProduct))
-  console.log(search)
-  search.forEach((producta) => {
-  showCarts(producta)
-  
-  productNameByUser.value= ''
-  })  
+  } else {
+
+    container[0].innerHTML = null
+    let userProduct = productNameByUser.value
+    let search = products.filter((productab) => productab.title.toLowerCase().includes(userProduct))
+    console.log(search)
+    search.forEach((producta) => {
+      showCarts(producta)
+
+      productNameByUser.value = '';
+
+    })
   }
-  }
+}
 
 
-function showCarts (product){
+function showCarts(product) {
+
   let cartsHtml = `<div class="cart" id='${product.id}'>
 <img class="product-img" src="${product.image}" />
 <h3 class="product-title">${product.title}</h3>
 <b class="product-price">${product.price} $</b>
 <h5 class="product-rating"><i class="fas fa-star" style="color: #fbff05;"></i> ${product.rating.rate} (${product.rating.count})</h5>
   </div>`
-  container[0].innerHTML += cartsHtml
-}
+  container[0].innerHTML += cartsHtml;
+
+};
 
 let poppup = document.getElementsByClassName('poppup');
 let carts = document.getElementsByClassName('cart');
-check.addEventListener('click' , function( ){
-  
-HToL.checked = false;
-LTOH.checked = false;
-all.checked = true;
-above3.checked = false;
-above4.checked = false;
+check.addEventListener('click', function () {
+
+  HToL.checked = false;
+  LTOH.checked = false;
+  all.checked = true;
+  above3.checked = false;
+  above4.checked = false;
 
 })
-check.addEventListener('click',cartsLoop)
+check.addEventListener('click', cartsLoop)
 
-function cartsLoop (){
-  
-  for(let i = 0 ;i < carts.length ; i++){
-    carts[i].addEventListener('click' , cartInPoppup)
-  }
-  
-}
- cartsLoop()
+function cartsLoop() {
 
-function cartInPoppup (){
+  for (let i = 0; i < carts.length; i++) {
+    carts[i].addEventListener('click', cartInPoppup)
+  };
+
+};
+
+cartsLoop()
+
+function cartInPoppup() {
   poppup[0].style.display = 'block'
   let showPoppupNo = this.id
 
   let poppupCart = `
   <h1 id='close-cart-btn'>×</h1>
   <div class='poppup-cart'>
-  <img class='poppup-image' src='${products[showPoppupNo-1].image}'/>
-  <h2 class="product-title">${products[showPoppupNo-1].title}</h2>
-  <h5><b>Description: </b>${products[showPoppupNo-1].description}</h5>
-<b class="product-price">${products[showPoppupNo-1].price} $</b>
-<h4 class="product-rating"><i class="fas fa-star" style="color: #fbff05;"></i> ${products[showPoppupNo-1].rating.rate} (${products[showPoppupNo-1].rating.count})</h4>
+  <img class='poppup-image' src='${products[showPoppupNo - 1].image}'/>
+  <h2 class="product-title">${products[showPoppupNo - 1].title}</h2>
+  <h5><b>Description: </b>${products[showPoppupNo - 1].description}</h5>
+<b class="product-price">${products[showPoppupNo - 1].price} $</b>
+<h4 class="product-rating"><i class="fas fa-star" style="color: #fbff05;"></i> ${products[showPoppupNo - 1].rating.rate} (${products[showPoppupNo - 1].rating.count})</h4>
   </div>`
 
   poppup[0].innerHTML = poppupCart
 
-let closeCartBtn = document.getElementById('close-cart-btn');
+  let closeCartBtn = document.getElementById('close-cart-btn');
 
-closeCartBtn.addEventListener('click',function (){
-    poppup[0].style.display = 'none'
+  closeCartBtn.addEventListener('click', function () {
+    poppup[0].style.display = 'none';
+
   })
 
 }
 
-check.addEventListener('click',function () {
+check.addEventListener('click', function () {
   poppup[0].style.display = 'none'
 
   HToL.checked = false;
@@ -525,7 +531,7 @@ check.addEventListener('click',function () {
   all.checked = true;
   above3.checked = false;
   above4.checked = false;
-  
+
 })
 
 let hideBar = document.querySelector('.hide-bar');
@@ -533,135 +539,136 @@ let navbarIcon = document.getElementById('navbar-icon');
 let sideBar = document.getElementsByClassName('side-bar');
 let navbar = document.getElementsByClassName('navbar');
 
-check.style.marginRight = '259px'
-sideBar[0].style.width = '241px'
-container[0].style.marginLeft = '241px'
+check.style.marginRight = '259px';
+sideBar[0].style.width = '241px';
+container[0].style.marginLeft = '241px';
 navbar[0].style.marginLeft = '241px';
-hideBar.style.display = 'block'
+hideBar.style.display = 'block';
 
-navbarIcon.addEventListener('click',hideShowsideBar)
+navbarIcon.addEventListener('click', hideShowsideBar);
 
-function hideShowsideBar () {
+function hideShowsideBar() {
 
-  if(sideBar[0].style.width === '241px' && container[0].style.marginLeft === '241px' && navbar[0].style.marginLeft === '241px' && check.style.marginRight === '259px' && hideBar.style.display === 'block'){
+  if (sideBar[0].style.width === '241px' && container[0].style.marginLeft === '241px' && navbar[0].style.marginLeft === '241px' && check.style.marginRight === '259px' && hideBar.style.display === 'block') {
     hideBar.style.display = 'none'
     check.style.marginRight = '59px'
-    sideBar[0].style.width = '45px' 
-  container[0].style.marginLeft = '45px';
-  navbar[0].style.marginLeft = '45px'
-  }else{
+    sideBar[0].style.width = '45px'
+    container[0].style.marginLeft = '45px';
+    navbar[0].style.marginLeft = '45px'
+  } else {
     hideBar.style.display = 'block'
 
     check.style.marginRight = '259px'
     navbar[0].style.marginLeft = '241px'
-    sideBar[0].style.width = '241px' 
+    sideBar[0].style.width = '241px'
     container[0].style.marginLeft = '241px';
-  }
-  
-}
+  };
+
+};
+
 hideShowsideBar()
 
 var HToL = document.getElementById('HToL');
 var LTOH = document.getElementById('LToH');
 
-HToL.addEventListener('change',HToLCartFunc)
+HToL.addEventListener('change', HToLCartFunc)
 
-function HToLCartFunc () {
+function HToLCartFunc() {
 
   container[0].innerHTML = null;
-  
-    let hiToLow = productss.sort((a,b) => b.price-a.price)
-  
-    hiToLow.forEach((product) => {
-      showCarts(product)
-    })
-    cartsLoop()
-    poppup[0].style.display = 'none'
 
-    above3.checked = false
-    above4.checked = false
-  
-  }
+  let hiToLow = productss.sort((a, b) => b.price - a.price)
 
-LTOH.addEventListener('change',LToHCartFunc)
+  hiToLow.forEach((product) => {
+    showCarts(product)
+  })
+  cartsLoop()
+  poppup[0].style.display = 'none'
 
-function LToHCartFunc () {
-  
-  container[0].innerHTML = null;
-  
-    let lowTohi = productss.sort((a,b) => a.price-b.price)
-  
-    lowTohi.forEach((product) => {
-      showCarts(product)
-    })
-    cartsLoop()
-    poppup[0].style.display = 'none'
-  
   above3.checked = false
   above4.checked = false
 
-  }
+}
+
+LTOH.addEventListener('change', LToHCartFunc)
+
+function LToHCartFunc() {
+
+  container[0].innerHTML = null;
+
+  let lowTohi = productss.sort((a, b) => a.price - b.price)
+
+  lowTohi.forEach((product) => {
+    showCarts(product)
+  })
+  cartsLoop()
+  poppup[0].style.display = 'none'
+
+  above3.checked = false
+  above4.checked = false
+
+}
 
 let all = document.getElementById('all');
 let above3 = document.getElementById('above3');
 let above4 = document.getElementById('above4');
 
-all.addEventListener('change',allCartFunc)
+all.addEventListener('change', allCartFunc)
 
-function allCartFunc () {
-  
+function allCartFunc() {
+
   container[0].innerHTML = null;
-  
-    products.forEach((product) => {
-      showCarts(product)
-    })
-    
-    cartsLoop()
-    poppup[0].style.display = 'none'
 
-    if(HToL.checked === true){
-      HToLCartFunc()
-    }else if(LTOH.checked === true){
-      LToHCartFunc()
-    }
+  products.forEach((product) => {
+    showCarts(product)
+  })
+
+  cartsLoop()
+  poppup[0].style.display = 'none'
+
+  if (HToL.checked === true) {
+    HToLCartFunc()
+  } else if (LTOH.checked === true) {
+    LToHCartFunc()
   }
+}
 
-above3.addEventListener('change',above3CartFunc)
+above3.addEventListener('change', above3CartFunc)
 
-function above3CartFunc () {
-  
+function above3CartFunc() {
+
   container[0].innerHTML = null;
-  
-    let aboveObj = products.filter((product) => product.rating.rate >= 3)
-    console.log(aboveObj)
-    aboveObj.forEach((product) =>   {
-      showCarts(product) 
-    } )
-  
-    cartsLoop()
-    poppup[0].style.display = 'none'
-  
-    HToL.checked = false;
-    LTOH.checked = false;
-  }
+
+  let aboveObj = products.filter((product) => product.rating.rate >= 3)
+  console.log(aboveObj)
+  aboveObj.forEach((product) => {
+    showCarts(product)
+  })
+
+  cartsLoop()
+  poppup[0].style.display = 'none'
+
+  HToL.checked = false;
+  LTOH.checked = false;
+}
 
 above4.addEventListener('change', above4CartFunc)
 
-function above4CartFunc () {
-  
-  container[0].innerHTML = null;
-  
-    let aboveObj = products.filter((product) => product.rating.rate >= 4)
-    
-    aboveObj.forEach((product) => {
-      showCarts(product)
-    }  )
-    
-    cartsLoop()
-    poppup[0].style.display = 'none'
+function above4CartFunc() {
 
-    
-    HToL.checked = false
-    LTOH.checked = false
-    
-  }
+  container[0].innerHTML = null;
+
+  let aboveObj = products.filter((product) => product.rating.rate >= 4)
+
+  aboveObj.forEach((product) => {
+    showCarts(product)
+  })
+
+  cartsLoop()
+  poppup[0].style.display = 'none'
+
+
+  HToL.checked = false
+  LTOH.checked = false
+
+}
