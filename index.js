@@ -14,7 +14,7 @@ const products = [
     title: 'Mens Casual Premium Slim Fit T-Shirts ',
     price: 22.3,
     description:
-      'Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.',
+      'Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans.',
     category: "men's clothing",
     image:
       'https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg',
@@ -104,7 +104,7 @@ const products = [
   {
     id: '11',
     title:
-      'Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5',
+      'Silicon Power 256GB SSD 3D NAND A55 SLC',
     price: 109,
     description:
       '3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks.',
@@ -136,7 +136,7 @@ const products = [
   {
     id: '14',
     title:
-      'Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ',
+      'Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor.',
     price: 999.99,
     description:
       '49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT ',
@@ -149,7 +149,7 @@ const products = [
     title: "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
     price: 56.99,
     description:
-      'Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1 Hidden Pocket Inside.Zippered Hand Pockets and Hidden Pocket keep your things secure.',
+      'Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Zippered Pockets: 2 Zippered Hand Pockets.',
     category: "women's clothing",
     image: 'https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg',
     rating: { rate: 2.6, count: 235 }
@@ -157,10 +157,10 @@ const products = [
   {
     id: '16',
     title:
-      "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+      "Lock and Love Women's Removable Hooded Faux Leather.",
     price: 29.95,
     description:
-      '100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON',
+      '100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket.',
     category: "women's clothing",
     image: 'https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg',
     rating: { rate: 2.9, count: 340 }
@@ -170,7 +170,7 @@ const products = [
     title: 'Rain Jacket Women Windbreaker Striped Climbing Raincoats',
     price: 39.99,
     description:
-      "Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat, fully stripes Lined and The Raincoat has 2 side pockets are a good size to hold all kinds of things, it covers the hips, and the hood is generous but doesn't overdo it.Attached Cotton Lined Hood with Adjustable Drawstrings give it a real styled look.",
+      "Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjus.",
     category: "women's clothing",
     image: 'https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg',
     rating: { rate: 3.8, count: 679 }
@@ -190,7 +190,7 @@ const products = [
     title: "Opna Women's Short Sleeve Moisture",
     price: 7.95,
     description:
-      '100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort',
+      '100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric ',
     category: "women's clothing",
     image: 'https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg',
     rating: { rate: 4.5, count: 146 }
@@ -444,7 +444,7 @@ function searchItemByUser() {
     container[0].innerHTML = null
     let userProduct = productNameByUser.value
     let search = products.filter((productab) => productab.title.toLowerCase().includes(userProduct))
-    console.log(search)
+
     search.forEach((producta) => {
       showCarts(producta)
 
@@ -457,29 +457,25 @@ function searchItemByUser() {
 
 function showCarts(product) {
 
-  let cartsHtml = `<div class="cart" id='${product.id}'>
+  let cartsHtml = `
+  <div class="main-div">
+  <div class="cart" id='${product.id}'>
 <img class="product-img" src="${product.image}" />
 <h3 class="product-title">${product.title}</h3>
 <b class="product-price">${product.price} $</b>
 <h5 class="product-rating"><i class="fas fa-star" style="color: #fbff05;"></i> ${product.rating.rate} (${product.rating.count})</h5>
-<button class='addToCartBtn'>Add to Cart</button>  
-<button class='buyNowBtn'>Buy now</button>  
+</div>
+<button id="${product.id}" class='addToCartBtn'>Add to Cart</button>  
+<button id="${product.id}" class='buyNowBtn'>Buy now</button>  
 </div>`
+
   container[0].innerHTML += cartsHtml;
 
 };
 
 let poppup = document.getElementsByClassName('poppup');
 let carts = document.getElementsByClassName('cart');
-check.addEventListener('click', function () {
 
-  HToL.checked = false;
-  LTOH.checked = false;
-  all.checked = true;
-  above3.checked = false;
-  above4.checked = false;
-
-})
 check.addEventListener('click', cartsLoop)
 
 function cartsLoop() {
@@ -494,7 +490,7 @@ cartsLoop()
 
 function cartInPoppup() {
   poppup[0].style.display = 'block'
-  let showPoppupNo = this.id
+  let showPoppupNo = this.id;
 
   let poppupCart = `
   <h1 id='close-cart-btn'>×</h1>
@@ -503,8 +499,11 @@ function cartInPoppup() {
   <h2 class="product-title">${products[showPoppupNo - 1].title}</h2>
   <h5><b>Description: </b>${products[showPoppupNo - 1].description}</h5>
 <b class="product-price">${products[showPoppupNo - 1].price} $</b>
+<div class="btn-div">
+<button id="${showPoppupNo}" class='addToCartBtn'>Add to Cart</button> 
 <h4 class="product-rating"><i class="fas fa-star" style="color: #fbff05;"></i> ${products[showPoppupNo - 1].rating.rate} (${products[showPoppupNo - 1].rating.count})</h4>
-  </div>`
+<button id="${showPoppupNo}" class='buyNowBtn'>Buy now</button> </div> 
+</div>`
 
   poppup[0].innerHTML = poppupCart
 
@@ -661,8 +660,61 @@ function above4CartFunc() {
   cartsLoop()
   poppup[0].style.display = 'none'
 
-
   HToL.checked = false
   LTOH.checked = false
 
 }
+
+let addToCartBtn = document.getElementsByClassName("addToCartBtn");
+let buyNowBtn = document.getElementsByClassName("buyNowBtn");
+
+for (let i = 0; i < addToCartBtn.length; i++) {
+  addToCartBtn[i].addEventListener('click', addToCartFunc)
+}
+
+for (let i = 0; i < buyNowBtn.length; i++) {
+  buyNowBtn[i].addEventListener('click', buyNowFunc)
+}
+
+let cartDiv = document.getElementById('cart-div');
+let cartIcon = document.getElementById('cart-icon');
+
+function addToCartFunc() {
+  let cartId = this.id-1
+  
+  let cart = `<div id="${this.id}" class="small-cart">
+  <img class="small-cart-img" src="${products[cartId].image}"/>
+  <h4 class="small-cart-title">${products[cartId].title}</h4>
+  <div class="small-cart-rating-price">
+  <h5 class="small-cart-rating"><i class="fas fa-star" style="color: #fbff05;"></i> ${products[cartId].rating.rate} (${products[cartId].rating.count})
+  <br />
+  <br />
+  <span><b>Price </b>
+${products[cartId].price}$</span>
+</h5>
+</div>
+</div
+>`
+
+cartDiv.innerHTML += cart
+for (let i = 0; i < cartDiv.childNodes.length; i++) {
+
+}
+
+}
+
+function buyNowFunc() {
+  alert("Your item is buy")
+
+};
+
+cartDiv.style.display = 'none'
+
+cartIcon.addEventListener('click', () => {
+  if (cartDiv.style.display === 'none') {
+    cartDiv.style.display = 'block'
+  } else {
+    cartDiv.style.display = 'none'
+  }
+})
+

@@ -1,51 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping-website</title>
-    <link rel="icon" href="https://poyki.app/wp-content/uploads/2020/08/ic_launcher-web.png" type="image/x-icon"/>
+    <link rel="icon" href="https://poyki.app/wp-content/uploads/2020/08/ic_launcher-web.png" type="image/x-icon" />
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header>
         <div class="navbar">
-            <img id="logo" src="https://poyki.app/wp-content/uploads/2020/08/ic_launcher-web.png" alt="Shopping-image-logo">
-        <div>
-            <input placeholder="Searh item" type="text" id="product-name-by-user">
-        <button id="check">Search</button>
-        </div>
+            <img id="logo" src="https://poyki.app/wp-content/uploads/2020/08/ic_launcher-web.png"
+                alt="Shopping-image-logo">
+            <div class="search-container">
+                <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+                <input placeholder="Searh item" type="text" id="product-name-by-user">
+                <button id="check">Search</button>
+            </div>
         </div>
     </header>
     <main>
+        <div class="cart-container">
+            <div id="cart-div"></div>
+        </div>
         <div class="side-bar">
             <i id="navbar-icon" class="fa-solid fa-bars"></i>
             <div class="hide-bar">
                 <h2>Price sorting</h2>
-               <input type="radio" name="HandL" id="HToL"/><label for="HToL">Hi to Low</label>
-               <br>
-               <br />
-               <input type="radio" name="HandL" id="LToH"/><label for="LToH">Low to Hi</label>
-            <h2>Sort by Rating</h2>
-            <input type="radio" name="rating" checked id="all"/><label for="all">All</label>
-               <br>
-               <br />
-               <input type="radio" name="rating" id="above3"/><label for="above3">Above 3 star rating</label>
-               <br>
-               <br>
-               <input type="radio" name="rating" id="above4"/><label for="above4">Above 4 star rating</label>
+                <input type="radio" name="HandL" id="HToL" /><label for="HToL">Hi to Low</label>
+                <br>
+                <br />
+                <input type="radio" name="HandL" id="LToH" /><label for="LToH">Low to Hi</label>
+                <h2>Sort by Rating</h2>
+                <input type="radio" name="rating" checked id="all" /><label for="all">All</label>
+                <br>
+                <br />
+                <input type="radio" name="rating" id="above3" /><label for="above3">Above 3 star rating</label>
+                <br>
+                <br>
+                <input type="radio" name="rating" id="above4" /><label for="above4">Above 4 star rating</label>
             </div>
         </div>
-            <div class="poppup">
+        <div class="poppup">
         </div>
         <div class="container">
-            
         </div>
-
         
-
     </main>
     <script src="index.js"></script>
 </body>
+
 </html>

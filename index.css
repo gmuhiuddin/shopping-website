@@ -1,10 +1,11 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
     display: flex;
 
 }
-.navbar{
+
+.navbar {
     height: 75px;
     width: 100%;
     background-color: rgb(121, 240, 173);
@@ -13,48 +14,54 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-#product-name-by-user{
-outline: none;
-border: none;
-height: 31px;
-width: 211px;
-border-radius: 15px;
-padding-left: 9px;
-font-size: 15px;
+
+#product-name-by-user {
+    outline: none;
+    border: none;
+    height: 31px;
+    width: 211px;
+    border-radius: 15px;
+    padding-left: 9px;
+    font-size: 15px;
 }
-#check{
-cursor: pointer;
-border: none;
-height: 33px;
-width: 111px;
-margin: 11px;
-margin-right: 59px;
-border-radius: 12px;
-font-size: 17px;
-background-color: white;
+
+#check {
+    cursor: pointer;
+    border: none;
+    height: 33px;
+    width: 111px;
+    margin: 11px;
+    margin-right: 59px;
+    border-radius: 12px;
+    font-size: 17px;
+    background-color: white;
 }
-#logo{
+
+#logo {
     height: 59px;
     width: 59px;
     margin-left: 12px;
     cursor: pointer;
 }
-.side-bar{
+
+.side-bar {
     background-color: rgb(238, 236, 236);
     height: 100vh;
     position: fixed;
 }
+
 .side-bar i {
     padding: 10px 11px;
     font-size: 25px;
     cursor: pointer;
     color: black;
 }
-.poppup{
+
+.poppup {
     display: none;
     height: 619px;
     width: 599px;
-    position:fixed;
+    position: fixed;
     background-color: white;
     border-radius: 23px;
     box-shadow: 5px 5px 12px black;
@@ -63,20 +70,23 @@ background-color: white;
     top: 9%;
     left: 32%;
 }
-.hide-bar{
+
+.hide-bar {
     display: none;
     width: 221px;
     height: 100vh;
     margin: 0 auto;
 }
-#close-cart-btn{
+
+#close-cart-btn {
     text-align: right;
     margin-right: 15px;
     margin-top: 0px;
     margin-bottom: 0px;
     cursor: pointer;
 }
-.poppup-cart{
+
+.poppup-cart {
     display: block;
     text-align: center;
     font-size: 18px;
@@ -84,19 +94,22 @@ background-color: white;
     width: 579px;
     margin: 0 auto;
 }
+
 .poppup-cart b {
     font-size: 23px;
 }
+
 .poppup-image {
-    height: 279px ;
-    width: 319px ;
+    height: 279px;
+    width: 319px;
 }
-h5{
+
+h5 {
     margin-left: 12px;
     margin-right: 12px;
 }
 
-.container{
+.container {
     padding: 11px;
     height: 100vh;
     flex-wrap: wrap;
@@ -104,9 +117,15 @@ h5{
     justify-content: center;
     padding-left: 0px;
     padding-right: 0px;
-    margin-top: 73px;
+    margin: 73px 0px;
 }
-.cart{
+
+.cart {
+    height: 451px;
+    width: 325px;
+}
+
+.main-div {
     height: 511px;
     width: 325px;
     margin: 15px;
@@ -116,31 +135,38 @@ h5{
     border-radius: 12px;
     padding-bottom: 19px;
 }
-.product-img{
+
+.product-img {
     margin: 0 29px;
     height: 259px;
     width: 259px;
     padding-top: 12px;
 
 }
-.product-title{
+
+.product-title {
     margin: 15px 17px;
 }
-.product-price{
+
+.product-price {
     margin: 15px 15px;
-font-size: 19px;
+    font-size: 19px;
 }
-.product-rating{
+
+.product-rating {
     margin: 15px 15px;
-font-size: 20px;
+    font-size: 20px;
 }
-label{
+
+label {
     font-size: 21px;
 }
-h2{
+
+h2 {
     font-size: 29px;
 }
-.addToCartBtn{
+
+.addToCartBtn {
     height: 39px;
     width: 99px;
     margin-left: 45px;
@@ -149,9 +175,10 @@ h2{
     font-size: 15px;
     margin-top: 7px;
     border: none;
-background-color: rgb(244, 187, 81);
+    background-color: rgb(244, 187, 81);
 }
-.buyNowBtn{
+
+.buyNowBtn {
     height: 39px;
     width: 99px;
     margin-left: 27px;
@@ -162,3 +189,72 @@ background-color: rgb(244, 187, 81);
     border: none;
     background-color: rgb(115, 250, 115);
 }
+
+.btn-div {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 39px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.fa-cart-shopping{
+    color: white;
+    font-size: 39px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.fa-cart-shopping:hover {
+    font-size: 40.5px;
+    transition: 500ms;
+}
+
+.cart-container {
+    display: flex;
+    justify-content: end;
+}
+
+#cart-div {
+    width: 373px;
+    background-color: rgb(182, 53, 53);
+    position:fixed;
+    align-items: end;
+    padding: 29px 15px;
+    margin-top: 75px;
+    margin-right: 49px;
+    color: white;
+}
+
+.small-cart{
+    height: 99px;
+    width: 371px;
+    margin: 12px 0px;
+    background-color: rgb(200, 189, 176);
+    display: flex;
+    align-items: center;
+}
+
+.small-cart-img{
+    height: 89px;
+    width: 99px;
+}
+
+.small-cart-title{
+    margin-left: 5px;
+    width: 148px;
+}
+.small-cart-rating{
+    font-size: 17px;
+    text-align: center;
+}
+/* .small-cart-rating-price{ */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 77px;
+    width: 89px;
+} */
