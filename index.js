@@ -416,14 +416,12 @@ const productss = [
 ];
 
 let container = document.getElementsByClassName('container');
-
 let productNameByUser = document.getElementById('product-name-by-user');
 let check = document.getElementById('check');
 let logo = document.getElementById('logo');
 
 logo.addEventListener('click', () => {
   window.location.reload();
-
 })
 
 check.addEventListener('click', searchItemByUser)
@@ -453,7 +451,6 @@ function searchItemByUser() {
     })
   }
 }
-
 
 function showCarts(product) {
 
@@ -578,8 +575,8 @@ function HToLCartFunc() {
   cartsLoop()
   poppup[0].style.display = 'none'
 
-  above3.checked = false
-  above4.checked = false
+  above3.checked = false;
+  above4.checked = false;
 
 }
 
@@ -667,22 +664,34 @@ function above4CartFunc() {
 
 let addToCartBtn = document.getElementsByClassName("addToCartBtn");
 let buyNowBtn = document.getElementsByClassName("buyNowBtn");
+let removeFromCartBtn = document.getElementsByClassName("removeFromCartBtn");
 
-for (let i = 0; i < addToCartBtn.length; i++) {
-  addToCartBtn[i].addEventListener('click', addToCartFunc)
-}
 
-for (let i = 0; i < buyNowBtn.length; i++) {
-  buyNowBtn[i].addEventListener('click', buyNowFunc)
-}
+
+setInterval(() => {
+  for (let i = 0; i < removeFromCartBtn.length; i++) {
+    removeFromCartBtn[i].addEventListener('click', removeFromCartFunc)
+  }
+
+  for (let i = 0; i < addToCartBtn.length; i++) {
+    addToCartBtn[i].addEventListener('click', addToCartFunc)
+  }
+
+  for (let i = 0; i < buyNowBtn.length; i++) {
+    buyNowBtn[i].addEventListener('click', buyNowFunc)
+  }
+}, 100)
 
 let cartDiv = document.getElementById('cart-div');
 let cartIcon = document.getElementById('cart-icon');
 
 function addToCartFunc() {
-  let cartId = this.id-1
-  
-  let cart = `<div id="${this.id}" class="small-cart">
+  this.disabled = true
+
+  let parent = this.parentNode
+  let cartId =  parent.childNodes[1].id-1
+
+  let cart = `<div id="${products[cartId]}" class="small-cart">
   <img class="small-cart-img" src="${products[cartId].image}"/>
   <h4 class="small-cart-title">${products[cartId].title}</h4>
   <div class="small-cart-rating-price">
@@ -693,13 +702,15 @@ function addToCartFunc() {
 ${products[cartId].price}$</span>
 </h5>
 </div>
+<div class="remove-buy-btn-div">
+<button id="${products[cartId].id}" class="removeFromCartBtn">Remove from Cart</button>
+<br />
+<button id="${products[cartId].id}" class="buyNowBtn small-cartbuyNowBtn">Buy now</button>
+</div>
 </div
 >`
 
-cartDiv.innerHTML += cart
-for (let i = 0; i < cartDiv.childNodes.length; i++) {
-
-}
+  cartDiv.innerHTML += cart
 
 }
 
@@ -718,3 +729,19 @@ cartIcon.addEventListener('click', () => {
   }
 })
 
+function removeFromCartFunc() {
+  let parent = this.parentNode;
+
+  parent.parentNode.remove()
+}
+
+// let body = document.getElementsByTagName('main');
+// navbarIcon.addEventListener('click',() =>{
+//   cartDiv.style.display = 'none'
+// })
+// productNameByUser.addEventListener('focus',() =>{
+//   cartDiv.style.display = 'none'
+// })  
+// check.addEventListener('click',() =>{
+//   cartDiv.style.display = 'none'
+// })
