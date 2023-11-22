@@ -577,6 +577,7 @@ function HToLCartFunc() {
 
   above3.checked = false;
   above4.checked = false;
+  all.checked = true;
 
 }
 
@@ -594,9 +595,9 @@ function LToHCartFunc() {
   cartsLoop()
   poppup[0].style.display = 'none'
 
-  above3.checked = false
-  above4.checked = false
-
+  above3.checked = false;
+  above4.checked = false;
+  all.checked = true;
 }
 
 let all = document.getElementById('all');
@@ -689,7 +690,7 @@ function addToCartFunc() {
   this.disabled = true
 
   let parent = this.parentNode
-  let cartId =  parent.childNodes[1].id-1
+  let cartId = parent.childNodes[1].id - 1
 
   let cart = `<div id="${products[cartId]}" class="small-cart">
   <img class="small-cart-img" src="${products[cartId].image}"/>
@@ -741,7 +742,7 @@ function removeFromCartFunc() {
 // })
 // productNameByUser.addEventListener('focus',() =>{
 //   cartDiv.style.display = 'none'
-// })  
+// })
 // check.addEventListener('click',() =>{
 //   cartDiv.style.display = 'none'
 // })
