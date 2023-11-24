@@ -214,8 +214,8 @@ h2 {
 }
 
 #cart-div {
-    width: 425px;
-    background-color: rgb(215, 168, 168);
+    height: 50vh;
+    width: 445px;
     position:fixed;
     padding: 29px 15px;
     margin-top: 75px;
@@ -223,6 +223,8 @@ h2 {
     color: white;
     top: 0%;
     right: 31px;
+    overflow: scroll;
+    background-color: aqua;
 }
 
 .small-cart{
